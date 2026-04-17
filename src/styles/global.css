@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e31e24;
+  --color-background-dark: #0a0a0a;
+  --font-display: "Inter", sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+}
+
+.glass-nav {
+  backdrop-filter: blur(16px);
+  background-color: rgba(10, 10, 10, 0.85);
+}
+
+.red-glow {
+  background: radial-gradient(circle at center, rgba(227, 30, 36, 0.08) 0%, transparent 70%);
+}
+
+.red-glow-strong {
+  background: radial-gradient(circle at center, rgba(227, 30, 36, 0.15) 0%, transparent 60%);
+}
+
+.text-gradient-red {
+  background: linear-gradient(to right, #ffffff, #e31e24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.check-icon-bg {
+  background: linear-gradient(135deg, rgba(227, 30, 36, 0.2) 0%, rgba(227, 30, 36, 0.05) 100%);
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, #e63946 0%, #a3222d 100%);
+}
+
+.footer-blur {
+  background: radial-gradient(circle at 50% 0%, rgba(230, 57, 70, 0.05) 0%, transparent 70%);
+}

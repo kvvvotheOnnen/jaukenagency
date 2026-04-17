@@ -1,0 +1,204 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Servicios">
+  <Header />
+  <main class="relative bg-background-dark overflow-hidden pt-20">
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden px-6">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(230,57,70,0.1),transparent_50%)]"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl text-center">
+        <span class="inline-block py-1 px-3 rounded-full bg-[#e63946]/10 border border-[#e63946]/20 text-[#e63946] text-xs font-bold tracking-widest uppercase mb-6">Soluciones Digitales 360</span>
+        <h1 class="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight gradient-text">
+          Nuestros Servicios
+        </h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light text-slate-400">
+          Estructuramos tu éxito digital a través de pilares fundamentales: Diseño Web de vanguardia, Estrategia SEO y Marketing de alto rendimiento.
+        </p>
+      </div>
+    </section>
+    <div class="space-y-32 pb-32">
+      <section class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-l-4 border-[#e63946] pl-6">
+          <div>
+            <span class="text-[#e63946] font-bold text-sm tracking-[0.2em] uppercase">Opción 01</span>
+            <h2 class="text-4xl md:text-5xl font-black text-white mt-2">Diseño Web Premium</h2>
+          </div>
+          <p class="text-slate-400 max-w-md font-light">Experiencias digitales optimizadas para la conversión y el posicionamiento de marca.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="glass-card p-10 rounded-2xl flex flex-col h-full group hover:bg-white/[0.05] transition-all">
+            <span class="material-symbols-outlined text-[#e63946] mb-6 text-4xl">web_asset</span>
+            <h3 class="text-2xl font-bold mb-4 text-white">Plan Landing Page</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">Ideal para lanzamientos de productos o servicios específicos con un enfoque total en la conversión.</p>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Diseño UI/UX Custom</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Copywriting Persuasivo</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Integración de CRM</li>
+            </ul>
+            <button class="w-full py-4 rounded-xl border border-white/10 text-white font-bold text-sm hover:bg-white/10 transition-colors">Solicitar Info</button>
+          </div>
+          <div class="relative p-10 rounded-2xl flex flex-col h-full group bg-gradient-to-b from-[#e63946]/20 to-transparent border border-[#e63946]/30 transform md:-translate-y-4">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#e63946] text-white text-[10px] font-black uppercase px-4 py-1 rounded-full tracking-widest">Recomendado</div>
+            <span class="material-symbols-outlined text-[#e63946] mb-6 text-4xl">domain</span>
+            <h3 class="text-2xl font-bold mb-4 text-white">Plan Corporativo</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">Presencia institucional sólida con múltiples secciones y arquitectura de información avanzada.</p>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Hasta 10 Secciones</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Blog / Noticias</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Optimización de Velocidad</li>
+            </ul>
+            <button class="w-full py-4 rounded-xl accent-gradient text-white font-bold text-sm shadow-xl shadow-[#e63946]/20 transition-transform active:scale-95">Comenzar Ahora</button>
+          </div>
+          <div class="glass-card p-10 rounded-2xl flex flex-col h-full group hover:bg-white/[0.05] transition-all">
+            <span class="material-symbols-outlined text-[#e63946] mb-6 text-4xl">shopping_bag</span>
+            <h3 class="text-2xl font-bold mb-4 text-white">Plan E-commerce</h3>
+            <p class="text-slate-400 text-sm mb-8 leading-relaxed">Tiendas online robustas, escalables y diseñadas para maximizar tus ventas mensuales.</p>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Pasarelas de Pago</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> Panel de Inventario</li>
+              <li class="flex items-center gap-3 text-sm text-slate-300"><span class="material-symbols-outlined text-[#e63946] text-lg">check_circle</span> SEO para Productos</li>
+            </ul>
+            <button class="w-full py-4 rounded-xl border border-white/10 text-white font-bold text-sm hover:bg-white/10 transition-colors">Solicitar Info</button>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-l-4 border-[#e63946] pl-6">
+          <div>
+            <span class="text-[#e63946] font-bold text-sm tracking-[0.2em] uppercase">Opción 02</span>
+            <h2 class="text-4xl md:text-5xl font-black text-white mt-2">Estrategia SEO</h2>
+          </div>
+          <p class="text-slate-400 max-w-md font-light">No solo te encuentran, te prefieren. Posicionamiento orgánico de alto rendimiento.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="glass-card p-8 rounded-xl border-l-2 border-l-[#e63946]/30">
+            <h4 class="text-white font-bold text-xl mb-4">SEO Local &amp; Maps</h4>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Domina tu área geográfica y atrae clientes listos para comprar en tu ubicación física.</p>
+            <div class="space-y-3">
+              <div class="flex justify-between text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <span>Alcance</span>
+                <span class="text-[#e63946]">Regional</span>
+              </div>
+              <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                <div class="w-1/3 h-full bg-[#e63946]"></div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-8 rounded-xl border-l-2 border-l-[#e63946]/30">
+            <h4 class="text-white font-bold text-xl mb-4">SEO Growth</h4>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Escalabilidad nacional mediante marketing de contenidos y optimización técnica profunda.</p>
+            <div class="space-y-3">
+              <div class="flex justify-between text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <span>Alcance</span>
+                <span class="text-[#e63946]">Nacional</span>
+              </div>
+              <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                <div class="w-2/3 h-full bg-[#e63946]"></div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card p-8 rounded-xl border-l-2 border-l-[#e63946]/30">
+            <h4 class="text-white font-bold text-xl mb-4">SEO Authority</h4>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">Estrategia agresiva de Link Building y PR digital para liderar los rankings globales.</p>
+            <div class="space-y-3">
+              <div class="flex justify-between text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <span>Alcance</span>
+                <span class="text-[#e63946]">Global</span>
+              </div>
+              <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                <div class="w-full h-full bg-[#e63946]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="bg-[#0a0a0a] py-24 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="max-w-xl mx-auto font-light text-slate-400 mb-20">Un proceso refinado para garantizar resultados excepcionales y consistencia visual.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+          <div class="hidden md:block absolute top-12 left-0 w-full h-px bg-white/5 -z-0"></div>
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-[#050505] border-4 border-[#e63946]/20 hover:border-[#e63946] transition-colors flex items-center justify-center mb-8 text-white font-bold text-2xl">01</div>
+            <h4 class="text-xl font-bold mb-4 text-white">Estrategia</h4>
+            <p class="text-sm leading-relaxed text-slate-400 px-4">Definimos objetivos claros, analizamos el mercado y trazamos la hoja de ruta.</p>
+          </div>
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-[#050505] border-4 border-[#e63946]/20 hover:border-[#e63946] transition-colors flex items-center justify-center mb-8 text-white font-bold text-2xl">02</div>
+            <h4 class="text-xl font-bold mb-4 text-white">Diseño</h4>
+            <p class="text-sm leading-relaxed text-slate-400 px-4">Ejecutamos con precisión visual, creando piezas que no solo se ven bien, sino que comunican.</p>
+          </div>
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-[#050505] border-4 border-[#e63946]/20 hover:border-[#e63946] transition-colors flex items-center justify-center mb-8 text-white font-bold text-2xl">03</div>
+            <h4 class="text-xl font-bold mb-4 text-white">Análisis</h4>
+            <p class="text-sm leading-relaxed text-slate-400 px-4">Medimos el impacto, optimizamos procesos y escalamos lo que funciona.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-24">
+          <span class="text-[#e63946] font-bold text-sm tracking-[0.3em] uppercase mb-4 block">El Equipo</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white gradient-text">Quiénes Somos</h2>
+          <div class="w-20 h-1 bg-[#e63946] mx-auto mt-8"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div class="text-center group">
+            <div class="relative w-40 h-40 mx-auto mb-8">
+              <div class="absolute inset-0 bg-[#e63946]/20 rounded-full blur-2xl group-hover:bg-[#e63946]/40 transition-all duration-500"></div>
+              <img alt="Portrait" class="relative w-full h-full object-cover rounded-full border-2 border-white/10 group-hover:border-[#e63946] transition-colors grayscale group-hover:grayscale-0 duration-500" src="https://placehold.co/320x320/1a1a1a/e63946?text=MJ" />
+            </div>
+            <h3 class="text-white font-bold text-xl mb-1">Mateo Jáuregui</h3>
+            <p class="text-[#e63946] text-xs font-black uppercase tracking-widest mb-4">Founder &amp; Creative Director</p>
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs mx-auto">Visionario digital con más de 10 años trazando estrategias disruptivas para marcas globales.</p>
+          </div>
+          <div class="text-center group">
+            <div class="relative w-40 h-40 mx-auto mb-8">
+              <div class="absolute inset-0 bg-[#e63946]/20 rounded-full blur-2xl group-hover:bg-[#e63946]/40 transition-all duration-500"></div>
+              <img alt="Portrait" class="relative w-full h-full object-cover rounded-full border-2 border-white/10 group-hover:border-[#e63946] transition-colors grayscale group-hover:grayscale-0 duration-500" src="https://placehold.co/320x320/1a1a1a/e63946?text=LV" />
+            </div>
+            <h3 class="text-white font-bold text-xl mb-1">Lucía Valenzuela</h3>
+            <p class="text-[#e63946] text-xs font-black uppercase tracking-widest mb-4">Head of Digital Strategy</p>
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs mx-auto">Especialista en crecimiento orgánico y performance, enfocada en maximizar el ROI de cada proyecto.</p>
+          </div>
+          <div class="text-center group">
+            <div class="relative w-40 h-40 mx-auto mb-8">
+              <div class="absolute inset-0 bg-[#e63946]/20 rounded-full blur-2xl group-hover:bg-[#e63946]/40 transition-all duration-500"></div>
+              <img alt="Portrait" class="relative w-full h-full object-cover rounded-full border-2 border-white/10 group-hover:border-[#e63946] transition-colors grayscale group-hover:grayscale-0 duration-500" src="https://placehold.co/320x320/1a1a1a/e63946?text=AC" />
+            </div>
+            <h3 class="text-white font-bold text-xl mb-1">Adrián Costa</h3>
+            <p class="text-[#e63946] text-xs font-black uppercase tracking-widest mb-4">Senior UX Designer</p>
+            <p class="text-slate-400 text-sm font-light leading-relaxed max-w-xs mx-auto">Arquitecto de interfaces intuitivas que fusionan estética minimalista con funcionalidad de alto nivel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-24">
+      <div class="accent-gradient border border-white/10 rounded-3xl p-12 md:p-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-6xl font-black mb-8 text-white tracking-tight">¿Listo para transformar tu marca?</h2>
+          <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+            Agenda una llamada de diagnóstico gratuita y descubre cómo podemos llevar tu presencia digital al siguiente nivel.
+          </p>
+          <button class="bg-white text-[#e63946] px-10 py-5 rounded-2xl text-lg font-black transition-all transform hover:scale-105 shadow-2xl hover:bg-slate-50">
+            Comenzar Ahora
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <a href="#" class="fixed bottom-8 right-8 z-[100] w-14 h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-[#e63946] shadow-2xl hover:bg-[#e63946] hover:text-white transition-all duration-300 group">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+    </svg>
+    <span class="absolute right-full mr-4 bg-[#0a0a0a] text-white text-xs px-2 py-1 rounded border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Escríbenos</span>
+  </a>
+</Layout>

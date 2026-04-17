@@ -1,0 +1,40 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 group cursor-pointer">
+      <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+        <span class="material-symbols-outlined text-xl">deployed_code</span>
+      </div>
+      <h1 class="text-xl font-black tracking-tighter text-white uppercase">JÁUKEN</h1>
+    </a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a class:list={[
+        "text-sm font-semibold transition-colors",
+        currentPath === "/" ? "text-white hover:text-primary" : "text-slate-300 hover:text-primary"
+      ]} href="/">Inicio</a>
+      <a class:list={[
+        "text-sm font-semibold transition-colors",
+        currentPath === "/portafolio" ? "text-white hover:text-primary" : "text-slate-300 hover:text-primary"
+      ]} href="/portafolio">Portafolio</a>
+      <a class:list={[
+        "text-sm font-semibold transition-colors",
+        currentPath === "/servicios" ? "text-white hover:text-primary" : "text-slate-300 hover:text-primary"
+      ]} href="/servicios">Servicios</a>
+      <a class:list={[
+        "text-sm font-semibold transition-colors",
+        currentPath === "/contacto" ? "text-white hover:text-primary" : "text-slate-300 hover:text-primary"
+      ]} href="/contacto">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <button class="hidden sm:flex items-center justify-center px-6 h-11 bg-primary text-white text-sm font-bold rounded-full hover:shadow-lg hover:shadow-primary/40 transition-all active:scale-95">
+        Contactar
+      </button>
+      <button class="md:hidden text-white">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</header>

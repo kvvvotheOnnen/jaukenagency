@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Portafolio">
+  <Header />
+  <main class="relative bg-background-dark overflow-hidden pt-20">
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+        <div class="flex flex-col gap-8">
+          <div class="space-y-4">
+            <span class="text-[#e63946] font-bold tracking-[0.2em] uppercase text-xs">Portfolio 2024</span>
+            <h1 class="text-6xl md:text-8xl font-black leading-none tracking-tighter">
+              Nuestros<br/><span class="text-[#e63946]">Proyectos</span>
+            </h1>
+          </div>
+          <p class="text-slate-400 text-lg md:text-xl max-w-md leading-relaxed">
+            Diseño Digital de alto impacto para marcas que buscan trascender. Estética premium, resultados medibles y ejecución impecable.
+          </p>
+          <div class="flex gap-4">
+            <button class="group flex items-center gap-3 bg-white text-black px-6 py-4 rounded-full font-bold transition-all hover:bg-[#e63946] hover:text-white">
+              <span>Ver Reel 2024</span>
+              <span class="material-symbols-outlined text-sm">play_arrow</span>
+            </button>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl">
+          <div class="aspect-video bg-[#0f0f0f] overflow-hidden">
+            <img alt="Cinematic shot of a high-end digital design studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" src="https://placehold.co/1200x675/0f0f0f/e63946?text=Showreel+2024" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-8 border-y border-white/5 mt-10">
+      <div class="flex flex-wrap items-center gap-8 md:gap-12 overflow-x-auto pb-4 md:pb-0 no-scrollbar">
+        <button class="text-[#e63946] border-b-2 border-[#e63946] pb-2 text-sm font-bold uppercase tracking-widest">Todos</button>
+        <button class="text-slate-500 hover:text-white pb-2 text-sm font-bold uppercase tracking-widest transition-colors">Social Media</button>
+        <button class="text-slate-500 hover:text-white pb-2 text-sm font-bold uppercase tracking-widest transition-colors">Web Design</button>
+        <button class="text-slate-500 hover:text-white pb-2 text-sm font-bold uppercase tracking-widest transition-colors">SEO Campaigns</button>
+        <button class="text-slate-500 hover:text-white pb-2 text-sm font-bold uppercase tracking-widest transition-colors">Branding</button>
+        <button class="text-slate-500 hover:text-white pb-2 text-sm font-bold uppercase tracking-widest transition-colors">Motion Graphics</button>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Minimalist luxury watch brand social media design" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Luxe+Watch" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Branding</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Luxe Watch Co.</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Futuristic neon energy drink digital campaign mockup" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Cyber+Growth" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">SEO Campaigns</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Cyber Growth</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Clean aesthetic beauty products social media grid" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Minimalist+Beauty" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Social Media</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Minimalist Beauty</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Tech conference website and branding visual" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Summit+Platform" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Web Design</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Summit Platform</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#1a1a1a] aspect-[4/5]">
+          <img alt="Organic food market logo and packaging design" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/1a1a1a/e63946?text=Organic+Market" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Branding</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Organic Market</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5]">
+          <img alt="Modern urban fashion streetwear social media campaign" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Urban+Fashion" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Social Media</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Urban Fashion Lab</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Modern architecture studio portfolio website" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Archetype+Studio" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Web Design</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Archetype Studio</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Data visualization dashboard for marketing analytics" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Alpha+Metrics" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">SEO Campaigns</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Alpha Metrics</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+        <div class="project-card relative group cursor-pointer overflow-hidden rounded-xl bg-[#0f0f0f] aspect-[4/5] ring-1 ring-white/5">
+          <img alt="Abstract 3D motion design artwork" class="w-full h-full object-cover transition-transform duration-500" src="https://placehold.co/800x1000/0f0f0f/e63946?text=Kinetic+Flow" />
+          <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-8">
+            <span class="text-[#e63946] text-xs font-bold uppercase tracking-widest mb-2">Motion Graphics</span>
+            <h3 class="text-2xl font-bold text-white mb-4">Kinetic Flow</h3>
+            <div class="h-1 w-0 bg-[#e63946] transition-all duration-500 group-hover:w-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#0a0a0a] py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
+          <h2 class="text-4xl font-black tracking-tight uppercase">Nuestra Metodología</h2>
+          <p class="text-slate-400 max-w-sm">Procesos optimizados para entregar calidad excepcional en cada pixel.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="text-[#e63946] text-5xl font-black opacity-30">01</div>
+            <h4 class="text-xl font-bold">Inmersión</h4>
+            <p class="text-slate-400 leading-relaxed">Entendemos el ADN de tu marca y los objetivos de negocio para trazar una ruta estratégica clara.</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="text-[#e63946] text-5xl font-black opacity-30">02</div>
+            <h4 class="text-xl font-bold">Diseño &amp; Concepto</h4>
+            <p class="text-slate-400 leading-relaxed">Traducimos la estrategia en piezas visuales de alto impacto que conectan emocionalmente.</p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="text-[#e63946] text-5xl font-black opacity-30">03</div>
+            <h4 class="text-xl font-bold">Optimización</h4>
+            <p class="text-slate-400 leading-relaxed">Medimos resultados y ajustamos cada detalle para garantizar el máximo rendimiento digital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6 overflow-hidden relative">
+      <div class="absolute inset-0 bg-[#e63946] opacity-5"></div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 italic uppercase">¿LISTO PARA ELEVAR TU MARCA?</h2>
+        <p class="text-xl text-slate-400 mb-12">Hablemos de tu próximo proyecto digital y hagamos algo increíble juntos.</p>
+        <button class="bg-[#e63946] hover:bg-white hover:text-black text-white text-lg font-black uppercase tracking-widest px-12 py-6 rounded-full transition-all flex items-center gap-4 mx-auto group">
+          EMPEZAR AHORA
+          <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">trending_flat</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
