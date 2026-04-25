@@ -32,6 +32,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
           source: "dist/*"
           target: "/home/u843747824/domains/jauken.agency/public_html"
           strip_components: 1
